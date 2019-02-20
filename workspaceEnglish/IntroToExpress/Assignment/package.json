@@ -1,0 +1,19 @@
+{
+  "name": "expressassignment",
+  "version": "1.0.0",
+  "description": "express js assignment for web dev bootcamp",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "ass"
+  ],
+  "author": "Akashbir Singh",
+  "license": "ISC"
+}

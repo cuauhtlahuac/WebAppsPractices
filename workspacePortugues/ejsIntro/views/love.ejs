@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+
+<h1>YOU FELL IN LOVE WITH: <%= thing.toUpperCase(); %></h1>
+<!--o codigo <%=  %>  é a forma que voce tem de adicionar dados no seu html via javascript no formato .ejs ... neste caso ele esta adicionando a variavel thing(que veio do app.js)-->
+
+    <% if(thing.toLowerCase() === "rusty") { %>
+    <p>GOOD CHOICE! RUSTY IS THE BEST</p>
+    <% } else  { %>
+    <p>BAD CHOICE!</p>
+    <% } %>
+    <!--no caso de codigo javascript voce nao coloca = (<% %>)... isto significa que o o html vai considerar o codigo, mas não explicitamente vai escrever para aparecer no browser-->
+    <!--observe que o} tambem esta envolvido... mais o <p> nao-->
+
+<p>P.S. this is the love.ejs file</p>
+
+<% include partials/footer %>

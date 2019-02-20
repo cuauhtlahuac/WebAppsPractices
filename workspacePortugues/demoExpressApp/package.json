@@ -1,0 +1,14 @@
+{
+  "name": "jason",
+  "version": "1.0.0",
+  "description": "Json of Demo Express App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gutemberg Bezerra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

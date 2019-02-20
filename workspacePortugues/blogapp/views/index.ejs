@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+
+<div class="ui main text container segment centered"><h1>MELHORES PRAIAS PARA SURF DO BRASIL</h1></div>
+
+<% blogs.forEach(function(blog){ %>
+    <div class="ui main text container segment">
+        <div class="ui huge header"><%= blog.title %></div>
+        <div class="ui top attached">
+            <div class="item">
+                <img class="ui centered rounded image" src= "<%= blog.image %>">
+                <div class="content">
+                    <span><%= blog.created.toDateString() %></span>
+                </div>
+                <div class="description">
+                    <p><%= blog.body.substring(0, 100) %>...</p>
+                    <a href="/blogs/<%= blog._id %>">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<% }) %>
+
+
+<% include ./partials/footer %>
